@@ -7,48 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		264A977F1B3D8A68005BADC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264A977E1B3D8A68005BADC0 /* AppDelegate.swift */; };
-		264A97811B3D8A68005BADC0 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264A97801B3D8A68005BADC0 /* MasterViewController.swift */; };
-		264A97831B3D8A68005BADC0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264A97821B3D8A68005BADC0 /* DetailViewController.swift */; };
-		264A97861B3D8A68005BADC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 264A97841B3D8A68005BADC0 /* Main.storyboard */; };
-		264A97881B3D8A68005BADC0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 264A97871B3D8A68005BADC0 /* Images.xcassets */; };
-		264A978B1B3D8A68005BADC0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 264A97891B3D8A68005BADC0 /* LaunchScreen.xib */; };
-		264A97971B3D8A68005BADC0 /* LiquidShapeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264A97961B3D8A68005BADC0 /* LiquidShapeTests.swift */; };
+		264A97AA1B3D8AC6005BADC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264A97A11B3D8AC6005BADC0 /* AppDelegate.swift */; };
+		264A97AB1B3D8AC6005BADC0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 264A97A21B3D8AC6005BADC0 /* LaunchScreen.xib */; };
+		264A97AC1B3D8AC6005BADC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 264A97A41B3D8AC6005BADC0 /* Main.storyboard */; };
+		264A97AD1B3D8AC6005BADC0 /* LiquidShapeNodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264A97A61B3D8AC6005BADC0 /* LiquidShapeNodeController.swift */; };
+		264A97AE1B3D8AC6005BADC0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 264A97A71B3D8AC6005BADC0 /* Images.xcassets */; };
+		264A97AF1B3D8AC6005BADC0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 264A97A81B3D8AC6005BADC0 /* Info.plist */; };
+		264A97B01B3D8AC6005BADC0 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264A97A91B3D8AC6005BADC0 /* ListViewController.swift */; };
+		264A97B21B3D8FEC005BADC0 /* LiquidShapeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264A97B11B3D8FEC005BADC0 /* LiquidShapeScene.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		264A97911B3D8A68005BADC0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 264A97711B3D8A68005BADC0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 264A97781B3D8A68005BADC0;
-			remoteInfo = LiquidShape;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		264A97791B3D8A68005BADC0 /* LiquidShape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiquidShape.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		264A977D1B3D8A68005BADC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		264A977E1B3D8A68005BADC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		264A97801B3D8A68005BADC0 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		264A97821B3D8A68005BADC0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		264A97851B3D8A68005BADC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		264A97871B3D8A68005BADC0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		264A978A1B3D8A68005BADC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		264A97901B3D8A68005BADC0 /* LiquidShapeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiquidShapeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		264A97951B3D8A68005BADC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		264A97961B3D8A68005BADC0 /* LiquidShapeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidShapeTests.swift; sourceTree = "<group>"; };
+		264A97A11B3D8AC6005BADC0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		264A97A31B3D8AC6005BADC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		264A97A51B3D8AC6005BADC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		264A97A61B3D8AC6005BADC0 /* LiquidShapeNodeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiquidShapeNodeController.swift; sourceTree = "<group>"; };
+		264A97A71B3D8AC6005BADC0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		264A97A81B3D8AC6005BADC0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		264A97A91B3D8AC6005BADC0 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		264A97B11B3D8FEC005BADC0 /* LiquidShapeScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiquidShapeScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		264A97761B3D8A68005BADC0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		264A978D1B3D8A68005BADC0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -61,8 +43,7 @@
 		264A97701B3D8A68005BADC0 = {
 			isa = PBXGroup;
 			children = (
-				264A977B1B3D8A68005BADC0 /* LiquidShape */,
-				264A97931B3D8A68005BADC0 /* LiquidShapeTests */,
+				264A97A01B3D8AC6005BADC0 /* Examples */,
 				264A977A1B3D8A68005BADC0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,48 +52,23 @@
 			isa = PBXGroup;
 			children = (
 				264A97791B3D8A68005BADC0 /* LiquidShape.app */,
-				264A97901B3D8A68005BADC0 /* LiquidShapeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		264A977B1B3D8A68005BADC0 /* LiquidShape */ = {
+		264A97A01B3D8AC6005BADC0 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
-				264A977E1B3D8A68005BADC0 /* AppDelegate.swift */,
-				264A97801B3D8A68005BADC0 /* MasterViewController.swift */,
-				264A97821B3D8A68005BADC0 /* DetailViewController.swift */,
-				264A97841B3D8A68005BADC0 /* Main.storyboard */,
-				264A97871B3D8A68005BADC0 /* Images.xcassets */,
-				264A97891B3D8A68005BADC0 /* LaunchScreen.xib */,
-				264A977C1B3D8A68005BADC0 /* Supporting Files */,
+				264A97A11B3D8AC6005BADC0 /* AppDelegate.swift */,
+				264A97A21B3D8AC6005BADC0 /* LaunchScreen.xib */,
+				264A97A41B3D8AC6005BADC0 /* Main.storyboard */,
+				264A97A91B3D8AC6005BADC0 /* ListViewController.swift */,
+				264A97A61B3D8AC6005BADC0 /* LiquidShapeNodeController.swift */,
+				264A97A71B3D8AC6005BADC0 /* Images.xcassets */,
+				264A97A81B3D8AC6005BADC0 /* Info.plist */,
+				264A97B11B3D8FEC005BADC0 /* LiquidShapeScene.swift */,
 			);
-			path = LiquidShape;
-			sourceTree = "<group>";
-		};
-		264A977C1B3D8A68005BADC0 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				264A977D1B3D8A68005BADC0 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		264A97931B3D8A68005BADC0 /* LiquidShapeTests */ = {
-			isa = PBXGroup;
-			children = (
-				264A97961B3D8A68005BADC0 /* LiquidShapeTests.swift */,
-				264A97941B3D8A68005BADC0 /* Supporting Files */,
-			);
-			path = LiquidShapeTests;
-			sourceTree = "<group>";
-		};
-		264A97941B3D8A68005BADC0 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				264A97951B3D8A68005BADC0 /* Info.plist */,
-			);
-			name = "Supporting Files";
+			path = Examples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,24 +91,6 @@
 			productReference = 264A97791B3D8A68005BADC0 /* LiquidShape.app */;
 			productType = "com.apple.product-type.application";
 		};
-		264A978F1B3D8A68005BADC0 /* LiquidShapeTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 264A979D1B3D8A68005BADC0 /* Build configuration list for PBXNativeTarget "LiquidShapeTests" */;
-			buildPhases = (
-				264A978C1B3D8A68005BADC0 /* Sources */,
-				264A978D1B3D8A68005BADC0 /* Frameworks */,
-				264A978E1B3D8A68005BADC0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				264A97921B3D8A68005BADC0 /* PBXTargetDependency */,
-			);
-			name = LiquidShapeTests;
-			productName = LiquidShapeTests;
-			productReference = 264A97901B3D8A68005BADC0 /* LiquidShapeTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -164,10 +102,6 @@
 				TargetAttributes = {
 					264A97781B3D8A68005BADC0 = {
 						CreatedOnToolsVersion = 6.3.2;
-					};
-					264A978F1B3D8A68005BADC0 = {
-						CreatedOnToolsVersion = 6.3.2;
-						TestTargetID = 264A97781B3D8A68005BADC0;
 					};
 				};
 			};
@@ -185,7 +119,6 @@
 			projectRoot = "";
 			targets = (
 				264A97781B3D8A68005BADC0 /* LiquidShape */,
-				264A978F1B3D8A68005BADC0 /* LiquidShapeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -195,16 +128,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				264A97861B3D8A68005BADC0 /* Main.storyboard in Resources */,
-				264A978B1B3D8A68005BADC0 /* LaunchScreen.xib in Resources */,
-				264A97881B3D8A68005BADC0 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		264A978E1B3D8A68005BADC0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				264A97AF1B3D8AC6005BADC0 /* Info.plist in Resources */,
+				264A97AE1B3D8AC6005BADC0 /* Images.xcassets in Resources */,
+				264A97AB1B3D8AC6005BADC0 /* LaunchScreen.xib in Resources */,
+				264A97AC1B3D8AC6005BADC0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,45 +142,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				264A97831B3D8A68005BADC0 /* DetailViewController.swift in Sources */,
-				264A97811B3D8A68005BADC0 /* MasterViewController.swift in Sources */,
-				264A977F1B3D8A68005BADC0 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		264A978C1B3D8A68005BADC0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				264A97971B3D8A68005BADC0 /* LiquidShapeTests.swift in Sources */,
+				264A97B21B3D8FEC005BADC0 /* LiquidShapeScene.swift in Sources */,
+				264A97AA1B3D8AC6005BADC0 /* AppDelegate.swift in Sources */,
+				264A97AD1B3D8AC6005BADC0 /* LiquidShapeNodeController.swift in Sources */,
+				264A97B01B3D8AC6005BADC0 /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		264A97921B3D8A68005BADC0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 264A97781B3D8A68005BADC0 /* LiquidShape */;
-			targetProxy = 264A97911B3D8A68005BADC0 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		264A97841B3D8A68005BADC0 /* Main.storyboard */ = {
+		264A97A21B3D8AC6005BADC0 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				264A97851B3D8A68005BADC0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		264A97891B3D8A68005BADC0 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				264A978A1B3D8A68005BADC0 /* Base */,
+				264A97A31B3D8AC6005BADC0 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		264A97A41B3D8AC6005BADC0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				264A97A51B3D8AC6005BADC0 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -344,7 +256,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = LiquidShape/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Examples/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,43 +266,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = LiquidShape/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Examples/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		264A979E1B3D8A68005BADC0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = LiquidShapeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiquidShape.app/LiquidShape";
-			};
-			name = Debug;
-		};
-		264A979F1B3D8A68005BADC0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = LiquidShapeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiquidShape.app/LiquidShape";
 			};
 			name = Release;
 		};
@@ -411,14 +289,6 @@
 			buildConfigurations = (
 				264A979B1B3D8A68005BADC0 /* Debug */,
 				264A979C1B3D8A68005BADC0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		264A979D1B3D8A68005BADC0 /* Build configuration list for PBXNativeTarget "LiquidShapeTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				264A979E1B3D8A68005BADC0 /* Debug */,
-				264A979F1B3D8A68005BADC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
