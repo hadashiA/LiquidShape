@@ -36,16 +36,36 @@ public class Polygon {
                 
                 let aControl = self.controls[prev]
                 let bControl = self.controls[i]
+                
                 let v = CGPoint(
                     x: aControl.right.x + a.x,
                     y: aControl.right.y + a.y)
+                
                 let u = CGPoint(
                     x: bControl.left.x + b.x,
                     y: bControl.left.y + b.y)
+                
                 path.addCurveToPoint(c, controlPoint1: v, controlPoint2: u)
+                
+                if self.closed && i >= self.points.count - 1 {
+                    let c = self.points[0]
+                    let cControl = self.controls[0]
+                    
+                    let v = CGPoint(
+                        x: bControl.right.x + b.x,
+                        y: bControl.right.y + b.y)
+                    
+                    let u = CGPoint(
+                        x: cControl.left.x + c.x,
+                        y: cControl.left.y + c.y)
+
+
+                    path.addCurveToPoint(c, controlPoint1: v, controlPoint2: u)
+                    path.closePath()
+                }
             }
         }
-        // path.closePath()
+
         return path.CGPath
     }
     
@@ -104,7 +124,7 @@ public class Polygon {
     }
     
     private func angleBetween(a: CGPoint, and b: CGPoint) -> CGFloat {
-        return atan2(a.y - b.y, a.x - b.y)
+        return atan2(a.y - b.y, a.x - b.x)
     }
     
     private func distanceBetween(a: CGPoint, and b: CGPoint) -> CGFloat {

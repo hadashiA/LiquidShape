@@ -10,10 +10,8 @@ class LiquidShapeScene : SKScene {
             CGPoint(x: 50, y: 50),
             ])
         let shape = SKShapeNode(path: polygon.createPath())
-        shape.position = CGPoint(x: size.width * 0.5, y: size.height * 0.5)
+        self.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         self.addChild(shape)
-        
-        println(polygon.controls)
     }
  
     required init?(coder aDecoder: NSCoder) {
