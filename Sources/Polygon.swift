@@ -45,7 +45,7 @@ public class Polygon {
                     x: bControl.left.x + b.x,
                     y: bControl.left.y + b.y)
                 
-                path.addCurveToPoint(c, controlPoint1: v, controlPoint2: u)
+                path.addCurveToPoint(b, controlPoint1: v, controlPoint2: u)
                 
                 if self.closed && i >= self.points.count - 1 {
                     let c = self.points[0]
@@ -58,7 +58,6 @@ public class Polygon {
                     let u = CGPoint(
                         x: cControl.left.x + c.x,
                         y: cControl.left.y + c.y)
-
 
                     path.addCurveToPoint(c, controlPoint1: v, controlPoint2: u)
                     path.closePath()
