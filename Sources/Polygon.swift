@@ -1,7 +1,5 @@
 import UIKit
 
-typealias Vertex = (Float, Float)
-
 public class Polygon {
     public struct ControlPoints {
         var left: CGPoint
@@ -20,6 +18,7 @@ public class Polygon {
     
     public init(points: [CGPoint]) {
         self.points = points
+        self.plot()
     }
     
     public func createPath() -> CGPath {
@@ -32,18 +31,35 @@ public class Polygon {
             } else {
                 let (prev, next) = self.prevAndNextIndexAt(i)
                 
+                let a = self.points[prev]
+                let c = self.points[next]
+                
                 let aControl = self.controls[prev]
                 let bControl = self.controls[i]
-                
+                let v = CGPoint(
+                    x: aControl.right.x + a.x,
+                    y: aControl.right.y + a.y)
+                let u = CGPoint(
+                    x: bControl.left.x + b.x,
+                    y: bControl.left.y + b.y)
+                path.addCurveToPoint(c, controlPoint1: v, controlPoint2: u)
             }
         }
+        // path.closePath()
         return path.CGPath
     }
     
     private func prevAndNextIndexAt(i: Int) -> (Int, Int) {
         let count = self.points.count
-        let prev = self.closed ? ((i - 1) % count) : max(i - 1, 0)
-        let next = self.closed ? ((i + 1) % count) : min(i + 1, count - 1)
+        
+        var prev = i - 1
+        var next = i + 1
+        
+        if prev < 0 {
+            prev += count
+        }
+        prev = self.closed ? (prev % count) : max(prev, 0)
+        next = self.closed ? (next % count) : min(next, count - 1)
         
         return (prev, next)
     }
