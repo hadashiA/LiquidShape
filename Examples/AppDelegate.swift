@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  LiquidShape
-//
-//  Created by 久保田 竜自 on 2015/06/26.
-//  Copyright (c) 2015年 hadashikick. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
