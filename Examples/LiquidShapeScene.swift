@@ -12,7 +12,10 @@ class LiquidShapeScene : SKScene {
             ])
         let path = polygon.createPath()
         let shape = SKShapeNode(path: path)
-        self.addChild(shape)
+        // self.addChild(shape)
+        
+        let circle = LiquidShapeNode(circleRadius: 100, numPoints: 4)
+        self.addChild(circle)
     }
  
     required init?(coder aDecoder: NSCoder) {
