@@ -1,11 +1,11 @@
 import UIKit
 
 class Wave {
-    class Spring {
+    struct Spring {
         var height: CGFloat = 0
         var velocity: CGFloat = 0
         
-        func update(density: CGFloat, rippleSpeed: CGFloat) {
+        mutating func update(density: CGFloat, rippleSpeed: CGFloat) {
             self.velocity += (-rippleSpeed * self.height - density * self.velocity)
             self.height += self.velocity
         }
@@ -22,8 +22,8 @@ class Wave {
     }
 
     func updateSprings(spread: CGFloat) {
-        for spring in self.springs {
-            spring.update(self.density, rippleSpeed: self.rippleSpeed)
+        for i in 0..<self.springs.count {
+            self.springs[i].update(self.density, rippleSpeed: self.rippleSpeed)
         }
         
         var leftDeltas = [CGFloat](count: self.springs.count, repeatedValue: 0)
@@ -33,17 +33,14 @@ class Wave {
             for i in 0..<self.springs.count {
                 if i > 0 {
                     leftDeltas[i] = spread * (self.springs[i].height - self.springs[i - 1].height)
-                    if leftDeltas[i] != 0 {
-                        println(leftDeltas[i])
-                    }
 
-                    let spring = self.springs[i - 1]
+                    var spring = self.springs[i - 1]
                     spring.velocity += leftDeltas[i]
                     self.springs[i - 1] = spring
                 }
                 if i < self.springs.count - 1 {
                     rightDeltas[i] = spread * (self.springs[i].height - self.springs[i + 1].height)
-                    let spring = self.springs[i + 1]
+                    var spring = self.springs[i + 1]
                     spring.velocity += rightDeltas[i]
                     self.springs[i + 1] = spring
                 }
@@ -51,12 +48,12 @@ class Wave {
             
             for i in 0..<self.springs.count {
                 if i > 0 {
-                    let spring = self.springs[i - 1]
+                    var spring = self.springs[i - 1]
                     spring.height += leftDeltas[i]
                     self.springs[i - 1] = spring
                 }
                 if i < self.springs.count - 1 {
-                    let spring = self.springs[i + 1]
+                    var spring = self.springs[i + 1]
                     spring.height += rightDeltas[i]
                     self.springs[i + 1] = spring
                 }

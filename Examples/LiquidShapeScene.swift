@@ -34,7 +34,7 @@ class LiquidShapeScene : SKScene {
         let r = arc4random_uniform(100)
         if r < 3 {
             let i = arc4random_uniform(UInt32(splash.wave.springs.count))
-            let spring = splash.wave.springs[Int(i)]
+            var spring = splash.wave.springs[Int(i)]
             spring.height = 100
             splash.wave.springs[Int(i)] = spring
         }

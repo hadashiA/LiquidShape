@@ -4,7 +4,7 @@ class SplashShapeNode : SKShapeNode {
     var wave: Wave
     
     init(size: CGSize) {
-        self.wave = Wave(size: size, waveLength: 10)
+        self.wave = Wave(size: size, waveLength: 340)
         super.init()
         
         self.path = self.wave.createPath()
