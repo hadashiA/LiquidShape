@@ -4,7 +4,7 @@ class SplashShapeNode : SKShapeNode {
     var size: CGSize
     var wave: Wave
     
-    private var schedule: SKAction!
+    private var update: SKAction!
     
     init(size: CGSize, waveLength: Int = 340) {
         self.size = size
@@ -14,15 +14,14 @@ class SplashShapeNode : SKShapeNode {
         
         self.path = self.wave.createPath()
         
-        let update = SKAction.runBlock { [weak self] in
+        let updatePath = SKAction.runBlock { [weak self] in
             if let shape = self {
                 shape.wave.updateSprings(0.1)
                 shape.path = shape.wave.createPath()
             }
         }
         let wait = SKAction.waitForDuration(0)
-        self.schedule = SKAction.repeatActionForever(SKAction.sequence([update, wait]))
-        self.runAction(self.schedule)
+        self.update = SKAction.repeatActionForever(SKAction.sequence([updatePath, wait]))
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -36,11 +35,14 @@ class SplashShapeNode : SKShapeNode {
         }
     }
     
-    func pausetWave() {
-        self.runAction(self.schedule)
+    func stop() {
+        self.removeActionForKey("update")
     }
     
-    func resumeWave() {
-        self.removeAllActions()
+    func start() {
+        if self.actionForKey("update") != nil {
+            return
+        }
+        self.runAction(self.update, withKey: "update")
     }
 }

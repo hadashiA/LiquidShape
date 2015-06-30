@@ -39,9 +39,6 @@ class Wave {
             
             self.rightDeltas[0] = 0
             self.rightDeltas[count - 1] = 0
-            
-            // var leftDeltas = [CGFloat](count: count, repeatedValue: 0)
-            // var rightDeltas = [CGFloat](count: count, repeatedValue: 0)
 
             for i in 0..<count {
                 if i > 0 {

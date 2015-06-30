@@ -7,22 +7,10 @@ class LiquidShapeScene : SKScene {
         self.splash = SplashShapeNode(size: CGSize(width: size.width, height: 200))
         
         super.init(size: size)
-        // self.anchorPoint = CGPoint(x: 0.5, y: 0.5)
-        
-//        let polygon = Polygon(points: [
-//            CGPoint(x: 0, y: 0),
-//            CGPoint(x: 100, y: 0),
-//            CGPoint(x: 50, y: 50),
-//            ])
-//        let path = polygon.createPath()
-//        let shape = SKShapeNode(path: path)
-//        // self.addChild(shape)
-//        
-//        let circle = LiquidShapeNode(circleRadius: 100, numPoints: 4)
-//        self.addChild(circle)
-        
-        self.splash.fillColor = UIColor.redColor()
-        self.splash.strokeColor = UIColor.redColor()
+
+        self.splash.fillColor = UIColor.blueColor()
+        self.splash.fillColor = UIColor.blueColor()
+        self.splash.start()
         self.addChild(self.splash)
     }
  
