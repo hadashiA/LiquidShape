@@ -1,27 +1,27 @@
 import UIKit
 
-public class Polygon {
-    public struct ControlPoints {
+class LiquidPolygon {
+    struct ControlPoints {
         var left: CGPoint
         var right: CGPoint
     }
     
-    public var closed = true
+    private(set) var closed = true
     
-    public var points: [CGPoint] {
+    private(set) var points: [CGPoint] {
         didSet {
             self.plot()
         }
     }
     
-    public var controls = [ControlPoints]()
+    private(set) var controls = [ControlPoints]()
     
-    public init(points: [CGPoint]) {
+    init(points: [CGPoint]) {
         self.points = points
         self.plot()
     }
-    
-    public func createPath() -> CGPath {
+
+    func createPath() -> CGPath {
         let path = UIBezierPath()
 
         for i in 0..<self.points.count {

@@ -1,22 +1,26 @@
 import SpriteKit
 
-public class LiquidShapeNode : SKShapeNode {
-    var polygon: Polygon
+public class LiquidPolygonNode : SKShapeNode {
+    var polygon: LiquidPolygon
+    
+    public var points: [CGPoint] {
+        return self.polygon.points
+    }
     
     init(points: [CGPoint]) {
-        self.polygon = Polygon(points: points)
+        self.polygon = LiquidPolygon(points: points)
         super.init()
         self.path = self.polygon.createPath()
     }
     
     convenience init(circleRadius radius: CGFloat, numPoints: Int = 8) {
-        let points: [CGPoint] = map(0..<8) { (i: Int) -> CGPoint in
-            let percent = CGFloat(i) / CGFloat(numPoints)
-            let theta = percent * CGFloat(M_PI)
+        let points: [CGPoint] = map(0..<numPoints) { (i: Int) -> CGPoint in
+            let percent = Double(i) / Double(numPoints)
+            let theta = percent * M_PI * 2
             
             return CGPoint(
-                x: radius * cos(theta),
-                y: radius * sin(theta))
+                x: radius * CGFloat(cos(theta)),
+                y: radius * CGFloat(sin(theta)))
         }
         self.init(points: points)
     }

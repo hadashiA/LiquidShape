@@ -1,12 +1,11 @@
 import SpriteKit
 
-class SplashShapeNode : SKShapeNode {
-    var size: CGSize
-    var wave: Wave
-    
+public class SplashShapeNode : SKShapeNode {
+    private var size: CGSize
+    private var wave: Wave
     private var update: SKAction!
     
-    init(size: CGSize, numSprings: Int = 340, random: Bool = true) {
+    public init(size: CGSize, numSprings: Int = 340, random: Bool = true) {
         self.size = size
         self.wave = Wave(size: size, waveLength: numSprings)
 
@@ -34,22 +33,22 @@ class SplashShapeNode : SKShapeNode {
         self.update = SKAction.repeatActionForever(SKAction.sequence(sequence))
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func start() {
+    public func start() {
         if self.hasActions() {
             return
         }
         self.runAction(self.update)
     }
     
-    func stop() {
+    public func stop() {
         self.removeAllActions()
     }
     
-    func splashAt(x: CGFloat, height: CGFloat = 100) {
+    public func splashAt(x: CGFloat, height: CGFloat = 100) {
         let i = Int(round((x / self.size.width) * CGFloat(self.wave.springs.count)))
         if i > 0 && i < self.wave.springs.count {
             self.wave.springs[Int(i)].height = height

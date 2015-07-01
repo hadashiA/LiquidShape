@@ -14,11 +14,13 @@
 		264A97AE1B3D8AC6005BADC0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 264A97A71B3D8AC6005BADC0 /* Images.xcassets */; };
 		264A97AF1B3D8AC6005BADC0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 264A97A81B3D8AC6005BADC0 /* Info.plist */; };
 		264A97B01B3D8AC6005BADC0 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264A97A91B3D8AC6005BADC0 /* ListViewController.swift */; };
-		264A97B21B3D8FEC005BADC0 /* SplashShapeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264A97B11B3D8FEC005BADC0 /* SplashShapeScene.swift */; };
+		264A97B21B3D8FEC005BADC0 /* WaveScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264A97B11B3D8FEC005BADC0 /* WaveScene.swift */; };
 		264A97B51B3D95E8005BADC0 /* LiquidPolygonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264A97B41B3D95E8005BADC0 /* LiquidPolygonNode.swift */; };
 		264A97B71B3D9628005BADC0 /* LiquidPolygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264A97B61B3D9628005BADC0 /* LiquidPolygon.swift */; };
 		26E0225C1B41850800032227 /* WaveNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E0225B1B41850800032227 /* WaveNode.swift */; };
 		26E0225E1B41853F00032227 /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E0225D1B41853F00032227 /* Wave.swift */; };
+		26F36CDD1B442978004B7488 /* LiquidPolygonNodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F36CDC1B442978004B7488 /* LiquidPolygonNodeViewController.swift */; };
+		26F36CDF1B4429F4004B7488 /* LiquidPolygonScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F36CDE1B4429F4004B7488 /* LiquidPolygonScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,11 +32,13 @@
 		264A97A71B3D8AC6005BADC0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		264A97A81B3D8AC6005BADC0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		264A97A91B3D8AC6005BADC0 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
-		264A97B11B3D8FEC005BADC0 /* SplashShapeScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashShapeScene.swift; sourceTree = "<group>"; };
+		264A97B11B3D8FEC005BADC0 /* WaveScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveScene.swift; sourceTree = "<group>"; };
 		264A97B41B3D95E8005BADC0 /* LiquidPolygonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiquidPolygonNode.swift; sourceTree = "<group>"; };
 		264A97B61B3D9628005BADC0 /* LiquidPolygon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiquidPolygon.swift; sourceTree = "<group>"; };
 		26E0225B1B41850800032227 /* WaveNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveNode.swift; sourceTree = "<group>"; };
 		26E0225D1B41853F00032227 /* Wave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wave.swift; sourceTree = "<group>"; };
+		26F36CDC1B442978004B7488 /* LiquidPolygonNodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiquidPolygonNodeViewController.swift; sourceTree = "<group>"; };
+		26F36CDE1B4429F4004B7488 /* LiquidPolygonScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiquidPolygonScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +76,10 @@
 				264A97A21B3D8AC6005BADC0 /* LaunchScreen.xib */,
 				264A97A41B3D8AC6005BADC0 /* Main.storyboard */,
 				264A97A91B3D8AC6005BADC0 /* ListViewController.swift */,
+				26F36CDC1B442978004B7488 /* LiquidPolygonNodeViewController.swift */,
+				26F36CDE1B4429F4004B7488 /* LiquidPolygonScene.swift */,
 				264A97A61B3D8AC6005BADC0 /* WaveNodeViewController.swift */,
-				264A97B11B3D8FEC005BADC0 /* SplashShapeScene.swift */,
+				264A97B11B3D8FEC005BADC0 /* WaveScene.swift */,
 				264A97A71B3D8AC6005BADC0 /* Images.xcassets */,
 				264A97A81B3D8AC6005BADC0 /* Info.plist */,
 			);
@@ -162,14 +168,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				264A97B21B3D8FEC005BADC0 /* SplashShapeScene.swift in Sources */,
+				264A97B21B3D8FEC005BADC0 /* WaveScene.swift in Sources */,
 				264A97AA1B3D8AC6005BADC0 /* AppDelegate.swift in Sources */,
 				26E0225E1B41853F00032227 /* Wave.swift in Sources */,
+				26F36CDD1B442978004B7488 /* LiquidPolygonNodeViewController.swift in Sources */,
 				264A97B71B3D9628005BADC0 /* LiquidPolygon.swift in Sources */,
 				264A97AD1B3D8AC6005BADC0 /* WaveNodeViewController.swift in Sources */,
 				264A97B51B3D95E8005BADC0 /* LiquidPolygonNode.swift in Sources */,
 				26E0225C1B41850800032227 /* WaveNode.swift in Sources */,
 				264A97B01B3D8AC6005BADC0 /* ListViewController.swift in Sources */,
+				26F36CDF1B4429F4004B7488 /* LiquidPolygonScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

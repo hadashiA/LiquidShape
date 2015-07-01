@@ -1,6 +1,6 @@
 import SpriteKit
 
-class WaveNodeScene : SKScene {
+class WaveScene : SKScene {
     override init(size: CGSize) {
         let splash = SplashShapeNode(
             size: CGSize(width: size.width, height: 100),
@@ -10,7 +10,6 @@ class WaveNodeScene : SKScene {
         super.init(size: size)
 
         self.backgroundColor = UIColor.whiteColor()
-        splash.fillColor = UIColor.blueColor()
         splash.fillColor = UIColor.blueColor()
         self.addChild(splash)
         splash.start()
