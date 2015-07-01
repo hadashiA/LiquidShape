@@ -62,10 +62,12 @@ class LiquidPolygonScene : SKScene {
             }
         }
         
+        let wait = SKAction.waitForDuration(1)
+        
         let next = SKAction.runBlock {
             [weak self] in
             self?.morph()
         }
-        self.polygon.runAction(SKAction.sequence([move, reset, next]))
+        self.polygon.runAction(SKAction.sequence([move, reset, wait, next]))
     }
 }
