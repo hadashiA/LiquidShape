@@ -1,11 +1,11 @@
 import SpriteKit
 
 public class LiquidPolygonNode : SKShapeNode {
-    var polygon: LiquidPolygon
-    
     public var points: [CGPoint] {
         return self.polygon.points
     }
+    
+    private var polygon: LiquidPolygon
     
     init(points: [CGPoint]) {
         self.polygon = LiquidPolygon(points: points)
@@ -29,4 +29,8 @@ public class LiquidPolygonNode : SKShapeNode {
         fatalError("init(coder:) has not been implemented")
     }
 
+    func movePointAt(i: Int, to: CGPoint) {
+        self.polygon.points[i] = to
+        self.path = self.polygon.createPath()
+    }
 }

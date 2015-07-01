@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>96DE59E7-814F-435F-A8A0-7FC692B30C03</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>LiquidShape</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>1AD03049B5CB22AB01FCEB1F51A413BFD8821AF7</key>
 		<string>github.com:hadashiA/LiquidShape.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>LiquidShape.xcodeproj/project.xcworkspace</string>
+	<string>LiquidShape.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>1AD03049B5CB22AB01FCEB1F51A413BFD8821AF7</key>
