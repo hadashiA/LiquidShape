@@ -3,8 +3,8 @@
 wip
 
  Draw ashapes using the curve.
- Provide the class `CALayer` in UIKit, and `SKNode` in SpriteKit
- 
+Proviede for drawing on the CALayer in UIKit, and SKNode in SpriteKit.
+
 ## LiquidShape
 
 ![LiquidShape](./LiquidShape.gif)
