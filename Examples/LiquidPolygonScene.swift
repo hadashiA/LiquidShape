@@ -68,6 +68,6 @@ class LiquidPolygonScene : SKScene {
             [weak self] in
             self?.morph()
         }
-        self.polygon.runAction(SKAction.sequence([move, reset, wait, next]))
+        self.polygon.runAction(SKAction.sequence([move, reset, next]))
     }
 }
