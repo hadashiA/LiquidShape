@@ -5,7 +5,7 @@ wip
  Draw ashapes using the curve.
 Proviede for drawing on the CALayer in UIKit, and SKNode in SpriteKit.
 
-## LiquidShape
+## LiquidPolygon
 
 
 
